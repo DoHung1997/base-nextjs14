@@ -1,0 +1,23 @@
+{
+  "home": "ホーム",
+  "dashboard": "ダッシュボード",
+  "sign_in": "サインイン",
+  "sign_up": "新規登録",
+  "sign_out": "サインアウト",
+  "projects": "プロジェクト",
+  "project": "プロジェクト",
+  "files": "ファイル",
+  "file": "ファイル",
+  "username": "ユーザー名",
+  "password": "パスワード",
+  "confirm_password": "パスワードの確認",
+  "remember_me": "ログイン情報を記憶",
+  "phone_number": "電話番号",
+  "first_name": "名",
+  "last_name": "姓",
+  "company": "会社",
+  "country": "国",
+
+  "username_required": "ユーザー名を入力してください",
+  "password_required": "パスワードを入力してください"
+}

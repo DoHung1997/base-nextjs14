@@ -1,0 +1,23 @@
+{
+  "home": "Trang chủ",
+  "dashboard": "Dashboard",
+  "sign_in": "Đăng nhập",
+  "sign_up": "Đăng ký",
+  "sign_out": "Đăng xuất",
+  "projects": "Dự án",
+  "project": "Dự án",
+  "files": "Tệp",
+  "file": "Tệp",
+  "username": "Tên đăng nhập",
+  "password": "Mật khẩu",
+  "confirm_password": "Xác nhận mật khẩu",
+  "remember_me": "Ghi nhớ đăng nhập",
+  "phone_number": "Số điện thoại",
+  "first_name": "Họ",
+  "last_name": "Tên",
+  "company": "Công ty",
+  "country": "Quốc gia",
+
+  "username_required": "Vui lòng nhập tài khoản của bạn",
+  "password_required": "Vui lòng nhập mật khẩu của bạn"
+}
