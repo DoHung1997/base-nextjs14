@@ -1,8 +1,13 @@
-import styles from "./page.module.css";
 import {getTranslations, unstable_setRequestLocale} from "next-intl/server";
 import {useTranslations} from "next-intl";
+import classNames from "classnames/bind";
 
-export async function generateMetadata({params: {locale}}: {params: {locale: string}}) {
+import styles from "./page.module.css";
+import {Button} from "@nextui-org/react";
+
+const cx = classNames.bind(styles);
+
+export async function generateMetadata({params: {locale}}: { params: { locale: string } }) {
     const t = await getTranslations({locale, namespace: 'HomePage'});
 
     return {
@@ -21,8 +26,9 @@ export default function Home({params: {locale}}: { params: { locale: string } })
     const t = useTranslations("HomePage")
 
     return (
-        <div className={styles.page}>
-            {t('title')}
+        <div className={cx('page', 'text-3xl font-bold underline')}>
+            <Button>{t('title')}</Button>
+
         </div>
     );
 }

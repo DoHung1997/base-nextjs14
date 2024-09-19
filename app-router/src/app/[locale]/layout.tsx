@@ -1,7 +1,8 @@
-import {NextIntlClientProvider} from 'next-intl';
-import {getMessages, unstable_setRequestLocale} from 'next-intl/server';
-import {routing} from "@/i18n/routing";
 import {Metadata} from "next";
+
+import {routing} from "@/i18n/routing";
+import RootProviders from "@/app/providers";
+
 
 export const metadata: Metadata = {
     title: {
@@ -17,17 +18,13 @@ export default async function LocaleLayout({
     children: React.ReactNode;
     params: { locale: string };
 }) {
-    // Providing all messages to the client
-    // side is the easiest way to get started
-    unstable_setRequestLocale(locale);
-    const messages = await getMessages();
 
     return (
         <html lang={locale}>
         <body>
-        <NextIntlClientProvider messages={messages}>
+        <RootProviders locale={locale}>
             {children}
-        </NextIntlClientProvider>
+        </RootProviders>
         </body>
         </html>
     );
