@@ -1,4 +1,4 @@
-import {getTranslations, unstable_setRequestLocale} from "next-intl/server";
+import {getTranslations} from "next-intl/server";
 import {useTranslations} from "next-intl";
 import classNames from "classnames/bind";
 
@@ -21,14 +21,12 @@ export async function generateMetadata({params: {locale}}: { params: { locale: s
     };
 }
 
-export default function Home({params: {locale}}: { params: { locale: string } }) {
-    unstable_setRequestLocale(locale);
+export default function Home() {
     const t = useTranslations("HomePage")
 
     return (
         <div className={cx('page', 'text-3xl font-bold underline')}>
             <Button>{t('title')}</Button>
-
         </div>
     );
 }

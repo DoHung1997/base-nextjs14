@@ -1,0 +1,53 @@
+$primary-color: #eb5849;
+$secondary-color: #2a2e3a;
+$secondary-color-15: rgba($color: $secondary-color, $alpha: 0.15);
+$light-primary-color: #d35e41;
+$background-color: #EEEEEE;
+$black: #000;
+$white: #FFFFFF;
+$grey: #dadad9;
+$dark-grey: #70706f;
+$light-grey: #ececec;
+$primary-red: #e7364c;
+$bg-body-color: #f5f5f5;
+$grey5: #f5f5f5;
+$grey7: #f2f2f2;
+$grey10: #ececec;
+$grey20: #dadad9;
+$grey30: #c6c6c5;
+$grey50: #898989;
+$grey70: #6f6f6e;
+$grey85: #4a4948;
+$link-color: #69b1ff;
+$bg-dark: #1b2a4e;
+
+$header-height: 48px;
+$header-icon-size: 1.3rem;
+$nav-chat-app-height: 57px;
+
+:export {
+  lightPrimaryColor: $light-primary-color;
+  primaryColor: $primary-color;
+  secondaryColor: $secondary-color;
+  primaryRed: $primary-red;
+  backgroundColor: $background-color;
+  white: $white;
+  black: $black;
+  grey: $grey;
+  darkGrey: $dark-grey;
+  lightGrey: $light-grey;
+  grey5: $grey5;
+  grey7: $grey7;
+  grey10: $grey10;
+  grey20: $grey20;
+  grey30: $grey30;
+  grey50: $grey50;
+  grey70: $grey70;
+  grey85: $grey85;
+  linkColor: $link-color;
+  bg-dark: $bg-dark;
+
+  headerHeight: $header-height;
+  headerIconSize: $header-icon-size;
+  navChatAppHeight: $nav-chat-app-height;
+}
